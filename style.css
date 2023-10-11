@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  background-image: url(background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(179, 180, 180);
+}
+.form {
+  background-color: #323338ff;
+  width: 30rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 0.3rem;
+  margin: 0.8rem auto;
+  row-gap: 1.5rem;
+  gap: 0.9rem;
+  padding: 2rem;
+}
+h1 {
+  color: #e0e1e3ff;
+  grid-area: 1/1/1 / span2;
+  margin: auto;
+  font-size: 1.45rem;
+  font-weight: 600;
+}
+.email,
+.name,
+.username,
+.password,
+.checkbox1,
+.checkbox2,
+.btn {
+  grid-column: 1 / span3;
+}
+input {
+  padding: 0.5rem;
+}
+input:focus {
+  outline: none;
+}
+
+.input-text-size {
+  width: 100%;
+  height: 2.5rem;
+  margin: 0.4rem 0rem;
+}
+.input-text-size,
+.dropbox-age,
+.dropbox-month,
+.dropbox-day,
+.btn {
+  background-color: #1e1f23ff;
+  border-radius: 0.2rem;
+  border: none;
+}
+select {
+  height: 2.5rem;
+  width: 100%;
+}
+p {
+  width: 100%;
+  grid-column: 1 / span3;
+  margin-bottom: -0.5rem;
+}
+.dropbox-age {
+  grid-column: 1;
+}
+.dropbox-month {
+  grid-column: 2;
+}
+.dropbox-day {
+  grid-column: 3 / span4;
+}
+.dropbox-age,
+.dropbox-month,
+.dropbox-day {
+  color: #9298a1ff;
+  font-size: 1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border: solid 0.5rem #1e1f23ff;
+  appearance: none;
+  background-image: url(chevron-down.svg);
+  background-repeat: no-repeat;
+  background-size: 1.3rem;
+  background-position: center right;
+}
+.btn {
+  background-color: #5865f2ff;
+  color: rgb(237, 237, 237);
+  border: none;
+  width: 100%;
+  height: 2.8rem;
+  font-size: 1rem;
+}
+
+a {
+  color: rgb(27, 157, 226);
+  text-decoration: none;
+  grid-area: 11 / 1 / 11 / span2;
+}
+
+.radio-btn {
+  grid-area: 11 / 3 /11 / span3;
+}
+.raidio-place {
+  margin-right: 0.22rem;
+}
+
+/**********
+
+**********/
+.email,
+.name,
+.username,
+.password,
+p {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.checkbox1,
+.checkbox2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5em;
+}
+.check-box-size {
+  margin-top: 0.1rem;
+  height: 1.6rem;
+  width: 1.6rem;
+}
+.check-box-text {
+  grid-column: span1;
+  margin-left: -1rem;
+  font-size: 0.74rem;
+}
+.text-pading {
+  padding-top: 0.4rem;
+}
+
+.last-link {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
